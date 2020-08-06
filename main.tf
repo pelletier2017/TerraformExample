@@ -5,20 +5,6 @@ provider "aws" {
   secret_key = var.AWS_SECRET_KEY
 }
 
-// subnet-ce6c82a9
-// subnet-c60e739f
-// subnet-fcda2fb5
-//resource "aws_instance" "app" {
-//  count = 3
-//
-//  ami = "ami-adecdbcc"
-//  instance_type = "t2.micro"
-//  subnet_id = "subnet-ce6c82a9"
-//  tags = {
-//    Name = "andrews app"
-//  }
-//}
-
 module "high_altitude" {
   source  = "terraform.cie.vi2e.io/High-Altitude/high-altitude/aws"
   version = "~>1.0.12"
@@ -36,3 +22,17 @@ module "high_altitude" {
   NEXUS_USERNAME = "${var.NEXUS_USERNAME}"
   NEXUS_PASSWORD = "${var.NEXUS_PASSWORD}"
 }
+
+# subnet-ce6c82a9
+## subnet-c60e739f
+# subnet-fcda2fb5
+#resource "aws_instance" "app" {
+#  count = 3
+#
+#  ami = "ami-adecdbcc"
+#  instance_type = "t2.micro"
+#  subnet_id = "subnet-ce6c82a9"
+#  tags = {
+#    Name = "andrews app"
+#  }
+#}
