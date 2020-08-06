@@ -25,7 +25,7 @@ module "high_altitude" {
   providers = {
     aws = aws.gov-west
   }
-
+  region = "us-gov-west-1"
   app_tpl_filepath_filename = "templates/app.tpl"
   app_version = "1.25.0"
   application_name = "andrew-soaesb"
