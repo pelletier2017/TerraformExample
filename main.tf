@@ -8,6 +8,8 @@ provider "aws" {
 // subnet-c60e739f
 // subnet-fcda2fb5
 resource "aws_instance" "app" {
+  count = 3
+
   ami = "ami-adecdbcc"
   instance_type = "t2.micro"
   subnet_id = "subnet-ce6c82a9"
