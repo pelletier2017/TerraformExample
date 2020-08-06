@@ -21,7 +21,7 @@ provider "aws" {
 
 module "high_altitude" {
   source  = "terraform.cie.vi2e.io/High-Altitude/high-altitude/aws"
-  version = "1.0.12"
+  version = "~>1.0.12"
   providers = {
     aws = aws.gov-west
   }
