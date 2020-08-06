@@ -14,6 +14,6 @@ variable "NEXUS_PASSWORD" {
   default = ""
 }
 
-//variable "AWS_DEFAULT_REGION" {
-//  default = "us-gov-west-1"
-//}
+variable "AWS_DEFAULT_REGION" {
+  default = "us-gov-west-1"
+}
