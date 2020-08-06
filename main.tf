@@ -7,7 +7,7 @@ provider "aws" {
 
 module "high_altitude" {
   source  = "terraform.cie.vi2e.io/High-Altitude/high-altitude/aws"
-  version = "~>1.0.13"
+  version = "~>1.0.15"
   providers = {
     aws = aws.gov-west
   }
@@ -21,4 +21,5 @@ module "high_altitude" {
   vpc_id = "vpc-30686a54"
   NEXUS_USERNAME = "${var.NEXUS_USERNAME}"
   NEXUS_PASSWORD = "${var.NEXUS_PASSWORD}"
+  ssh_cidrs =
 }
