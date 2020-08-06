@@ -8,16 +8,16 @@ provider "aws" {
 // subnet-ce6c82a9
 // subnet-c60e739f
 // subnet-fcda2fb5
-resource "aws_instance" "app" {
-  count = 3
-
-  ami = "ami-adecdbcc"
-  instance_type = "t2.micro"
-  subnet_id = "subnet-ce6c82a9"
-  tags = {
-    Name = "andrews app"
-  }
-}
+//resource "aws_instance" "app" {
+//  count = 3
+//
+//  ami = "ami-adecdbcc"
+//  instance_type = "t2.micro"
+//  subnet_id = "subnet-ce6c82a9"
+//  tags = {
+//    Name = "andrews app"
+//  }
+//}
 
 module "high_altitude" {
   source  = "terraform.cie.vi2e.io/High-Altitude/high-altitude/aws"
@@ -25,7 +25,6 @@ module "high_altitude" {
   providers = {
     aws = aws.gov-west
   }
-  region = "us-gov-west-1"
   app_tpl_filepath_filename = "templates/app.tpl"
   app_version = "1.25.0"
   application_name = "andrew-soaesb"
