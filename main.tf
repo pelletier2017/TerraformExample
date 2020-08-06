@@ -1,5 +1,5 @@
 provider "aws" {
-//  alias = "gov-west"
+  alias = "gov_west"
   region = "us-gov-west-1"
   access_key = var.AWS_ACCESS_KEY
   secret_key = var.AWS_SECRET_KEY
@@ -9,7 +9,7 @@ provider "aws" {
 //  source  = "terraform.cie.vi2e.io/High-Altitude/high-altitude/aws"
 //  version = "~>1.0.12"
 //  providers = {
-//    aws = aws.gov-west
+//    aws = aws.gov_west
 //  }
 //  app_tpl_filepath_filename = "templates/app.tpl"
 //  app_version = "1.25.0"
