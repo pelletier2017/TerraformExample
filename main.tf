@@ -21,5 +21,4 @@ module "high_altitude" {
   vpc_id = "vpc-30686a54"
   NEXUS_USERNAME = "${var.NEXUS_USERNAME}"
   NEXUS_PASSWORD = "${var.NEXUS_PASSWORD}"
-  ssh_cidrs =
 }
